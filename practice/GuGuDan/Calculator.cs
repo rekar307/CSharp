@@ -1,8 +1,8 @@
 namespace PeopleMngr
 {
-    public partial class Form1 : Form
+    public partial class Calculator : Form
     {
-        public Form1()
+        public Calculator()
         {
             InitializeComponent();
         }
@@ -15,7 +15,7 @@ namespace PeopleMngr
                 textBox_res.Multiline = true;
                 for (int i = 1; i <= 9; ++i)
                 {
-                    textBox_res.Text += textBox_num.Text + " x " + i + " = " + (n * i) + Environment.NewLine;
+                    textBox_res.AppendText(textBox_num.Text + " x " + i + " = " + (n * i) + "\r\n");
                 }
             }
             else
